@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Logo" class="logo-img" />
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Irina Draganova</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <!--Профил-->
+    <canvas id="bg-canvas"></canvas>
+
+    <section id="profile" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="section__pic-container">
+            <img src="./assets/profile.png" alt="Irina Draganova profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, my name is</p>
+            <h1 class="title">Irina Draganova</h1>
+            <p class="section__text__p2">Junior Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn-btn-color-2" onclick="window.open('./assets/CV_Irina_Draganova.pdf')">Download
+                    CV</button>
+                <button class="btn-btn-color-1" onclick="location.href='./#contact'">Contact Info
+                </button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/irina-draganova-5b6083278/'">
+                <img src="./assets/github.png" alt="My GitHub profile" class="icon"
+                    onclick="location.href='https://github.com/Ina2118'">
+            </div>
+        </div>
+
+    </section>
+    <!--За мен-->
+    <section id="about" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <!--тук сложих div за scroll animation-->
+        <div data-aos="fade-up">
+            <h1 class="title">About Me</h1>
+            <p class="section__text__p1">Feed my playful puppy by clicking on tasty treats!</p>
+            <div class="section-container">
+                <div class="about-details-container">
+                    <!--
+                dog -->
+                    <div class="game-container" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <div class="dog-container">
+                            <img src="./assets/husky2.png" alt="Cute Husky" class="dog" id="dog">
+                            <div id="dog-speech" class="thought-bubble">
+                                Feed me a snack, and I'll tell you why my human is awesome 🐶
+                            </div>
+                        </div>
+                        <img src="./assets/treat.png" alt="Treat" class="treat" onclick="giveTreat()">
+                    </div>
+                    <br>
+                    <div class="about-containers">
+                        <div data-aos="fade-up">
+                            <div class="details-container">
+                                <div class="head">
+                                    <img src="./assets/experience.png" alt="Experience icon" class="icon-about" />
+                                    <h3>Experience</h3>
+                                </div>
+                                <div class="content">
+                                    <strong>CODIX</strong>
+                                    <br>
+                                    SPECIALIST IT PLANING
+                                    <br>
+                                    08/2024 - 10/2024
+                                </div>
+                                <div class="content">
+                                    <strong>Behr-Hella Thermocontrol</strong>
+                                    <br>
+                                    MES ENGINEER
+                                    <br>
+                                    07/2023 - 02/2024
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up">
+                            <div class="details-container">
+                                <div class="head">
+                                    <img src="./assets/education.png" alt="Education icon" class="icon-about" />
+                                    <h3>Education</h3>
+                                </div>
+                                <div class="content">
+                                    <strong>Technical University of Sofia</strong>
+                                    <br>
+                                    Electrical engineering in French
+                                </div>
+                                <div class="content">
+                                    <strong> Language school Simeon Radev</strong>
+                                    <br>
+                                    French and Spanish
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!--Умения-->
+    <section id="experience" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="about-containers">
+                    <!-- Frontend Skills -->
+                    <div class="details-container-skills">
+                        <div class="head">
+                            <h2 class="experience-sub-title">Frontend Development</h2>
+                        </div>
+                        <div class="content">
+                            <article>
+                                <img src="./assets/duck.png" alt="Experience icon" class="icon" />
+                                <div>
+                                    <h3>HTML</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/duck.png" alt="Experience icon" class="icon" />
+                                <div>
+                                    <h3>CSS</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/duck.png" alt="Experience icon" class="icon" />
+                                <div>
+                                    <h3>SASS</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/duck.png" alt="Experience icon" class="icon" />
+                                <div>
+                                    <h3>JavaScript</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/duck.png" alt="Experience icon" class="icon" />
+                                <div>
+                                    <h3>TypeScript</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/duck.png" alt="Experience icon" class="icon" />
+                                <div>
+                                    <h3>Angular</h3>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Other Skills -->
+                    <div class="details-container-skills">
+                        <div class="head">
+                            <h2 class="experience-sub-title">Other Skills</h2>
+                        </div>
+                        <div class="content">
+                            <article>
+                                <img src="./assets/duck.png" alt="Experience icon" class="icon" />
+                                <div>
+                                    <h3>MySQL</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/duck.png" alt="Experience icon" class="icon" />
+                                <div>
+                                    <h3>Unit Testing</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/duck.png" alt="Experience icon" class="icon" />
+                                <div>
+                                    <h3>Unity</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/duck.png" alt="Experience icon" class="icon" />
+                                <div>
+                                    <h3>Postman</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/duck.png" alt="Experience icon" class="icon" />
+                                <div>
+                                    <h3>Blender</h3>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <br>
+
+    <!--Projects-->
+   <section id="projects" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <p class="section__text__p1">My Work</p>
+    <h1 class="title">Projects</h1>
+
+    <div class="projects-container">
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Portfolio Website</h3>
+                </div>
+                <div class="flip-card-back">
+                    <p>A personal portfolio website showcasing my skills and projects.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>HTML AND CSS</h3>
+                </div>
+                <div class="flip-card-back">
+                    <p>Check out some of my small HTML and CSS projects on my GitHub.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <br>
+    <!--Контакти-->
+    <section id="contact" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
+                <p><a href="mailto:irina.draganova21@gmail.com">irina.draganova21@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/irina-draganova-5b6083278/" target="_blank">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" />
+                <p><a href="https://github.com/Ina2118" target="_blank">GitHub</a></p>
+            </div>
+        </div>
+        </secction>
+    <!--FOOTER-->
+        <footer data-aos="fade-in" data-aos-anchor-placement="top-bottom">
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2025 Irina Draganova. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+        <script src="particles-bg.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                once: false
+            });
+        </script>
+</body>
+
+</html>

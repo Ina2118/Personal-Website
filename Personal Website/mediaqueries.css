@@ -1,0 +1,29 @@
+@media screen and (max-width: 1200px){
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn-btn-color-2 {
+        font-size: 11px;
+        padding: 0.5em 1em;
+    }
+}
+
+/*dog*/
+@keyframes fadeOut {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0; transform: scale(0); }
+}
+
+.dog.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+.speech-bubble.fade-out {
+  animation: fadeOut 1s forwards;
+}
