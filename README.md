@@ -1,5 +1,35 @@
 # Personal Website
 
-This is my personal website, fully built using **HTML, CSS, and JavaScript**. I designed and coded it from scratch, using **HTML `<canvas>`** for some interactive graphics.
+## 🌐 Live Demo
+https://ina2118.github.io/Personal-Website/
 
-The website is still under development, with new features and improvements being added regularly as I continue to get new ideas on how to enhance it. It was created to practice building a **single-page application (SPA)** and to further improve my front-end development skills.
+This is my personal website, fully built from scratch using **HTML, CSS, and JavaScript**.  
+It serves as both my online CV and a playground for experimenting with new ideas and visual concepts.
+
+The website includes interactive elements implemented with the **HTML5 Canvas API**, used mainly for dynamic background graphics.
+
+## 🚧 Work in Progress
+The project is continuously evolving as I explore new ideas and techniques.  
+I actively use it to experiment, refactor, and improve both functionality and user experience over time.
+
+## 🛠️ Tech Stack
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- HTML5 Canvas API
+
+## 📂 Project Structure
+- `index.html` – Main HTML file for the website structure  
+- `mediaqueries.css` – Responsive styles using media queries for different screen sizes, including navigation and buttons  
+- `particles-bg.js` – Canvas animation logic for interactive background particles  
+- `script.js` – JavaScript for menu toggle and the interactive dog mini-game (clickable messages, animations)  
+- `style.css` – Main styling and layout
+
+## ▶️ Run Locally
+Open `index.html` in your browser,  
+or start the project using a local server, e.g., the **Live Server** extension in Visual Studio Code.
+
+## 🎯 Purpose
+- Practice building a simple single-page application (SPA)
+- Experiment with interactive visuals and animations
+- Improve front-end development skills and code structure
