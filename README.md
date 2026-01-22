@@ -19,6 +19,7 @@ I actively use it to experiment, refactor, and improve both functionality and us
 - HTML5 Canvas API
 
 ## 📂 Project Structure
+- `assets/` – Folder containing all images and icons used in the website
 - `index.html` – Main HTML file for the website structure  
 - `mediaqueries.css` – Responsive styles using media queries for different screen sizes, including navigation and buttons  
 - `particles-bg.js` – Canvas animation logic for interactive background particles  
