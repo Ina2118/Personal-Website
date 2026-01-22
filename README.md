@@ -4,7 +4,8 @@ It serves as both my online CV and a playground for experimenting with new ideas
 
 The website includes interactive elements implemented with the **HTML5 Canvas API**, used mainly for dynamic background graphics.
 
-## 🌐 Live Demo https://ina2118.github.io/Personal-Website/
+## 🌐 Live Demo 
+https://ina2118.github.io/Personal-Website/
 
 ## 🚧 Work in Progress
 The project is continuously evolving as I explore new ideas and techniques.  
