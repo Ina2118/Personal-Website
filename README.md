@@ -1,12 +1,10 @@
 # Personal Website
-
-## 🌐 Live Demo
-https://ina2118.github.io/Personal-Website/
-
 This is my personal website, fully built from scratch using **HTML, CSS, and JavaScript**.  
 It serves as both my online CV and a playground for experimenting with new ideas and visual concepts.
 
 The website includes interactive elements implemented with the **HTML5 Canvas API**, used mainly for dynamic background graphics.
+
+## 🌐 Live Demo https://ina2118.github.io/Personal-Website/
 
 ## 🚧 Work in Progress
 The project is continuously evolving as I explore new ideas and techniques.  
